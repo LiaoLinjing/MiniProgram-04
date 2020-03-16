@@ -1,0 +1,19 @@
+<!--page/template/template.wxml-->
+
+
+<view>-----------template---------</view>
+<!-- 之前小程序不支持自定义组件，为了进行代码复用而有了template -->
+<!-- 模板中包裹的内容，在没有被使用前，是不会进行渲染的 -->
+
+<!-- 定义模板 -->
+<template name="module1">
+  <button>{{btntext}}</button>
+  <view>{{viewtext}}</view>
+</template>
+
+<!-- 使用模板 -->
+<template is="module1" data="{{btntext:'按钮',viewtext:'哈哈'}}"></template>
+<template is="module1" data="{{btntext:'警告',viewtext:'嘿嘿'}}"></template>
+<template is="module1" data="{{btntext:'登陆',viewtext:'呵呵'}}"></template>
+
+
