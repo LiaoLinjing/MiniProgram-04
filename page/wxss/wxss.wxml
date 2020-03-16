@@ -1,0 +1,27 @@
+<!--page/wxss/wxss.wxml-->
+
+<!-- --------1.设置样式的3中方式------- -->
+<!-- --------（1）行内（内联）样式------- -->
+<view style="color:red; font-size:30px">（1）行内样式</view>
+
+<!-- --------（2）页面样式------- -->
+<view class="page-style">(2）页面样式</view>
+
+<!-- --------（3）全局样式------- -->
+<!-- 在app.wxss里编写 -->
+<view class="overall-style">（3）全局样式-</view>
+
+<!-- --------2.三种样式作用于同一个组件------- -->
+<!-- 优先级顺序：行内>页内>全局 -->
+<view style="background:black" class="page-style" class="overall-style">优先级+权重</view>
+<!-- 在全局样式中加入!important（权重无穷大）即可改变优先级 -->
+
+<!-- --------3.WXSS中的单位：rpx------- -->
+<!-- 可以根据屏幕尺寸自动适配 -->
+<view class="box_px">box_px</view>
+<view class="box-rpx">box_rpx</view>
+
+<!-- --------4.样式的导入------- -->
+<button class="btn-page-style">页面样式导入</button>
+<button class="btn-overall-style">全局样式导入</button>
+

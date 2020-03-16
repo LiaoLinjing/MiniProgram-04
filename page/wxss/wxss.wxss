@@ -1,0 +1,28 @@
+/* page/wxss/wxss.wxss */
+@import './style/btn.wxss';
+
+.page-style{
+  background: gray;
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.box_px{
+  background: gray;
+  color: black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+
+}
+
+
+.box-rpx{
+  background:green;
+  color: black;
+  width: 400rpx;
+  height: 400rpx;
+  margin: 10rpx;
+
+}

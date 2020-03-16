@@ -1,0 +1,9 @@
+
+@import './overall-style/btn-overall.wxss';
+
+.overall-style{
+  background: yellow !important;
+  color: red;
+  font-size: 30px;
+  margin: 10px;
+}
