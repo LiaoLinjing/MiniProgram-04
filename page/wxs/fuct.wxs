@@ -1,0 +1,27 @@
+
+//js代码,
+var text = "hello world"
+var str = "kobe"
+
+var sub = function (num1, num2) {
+  return num1 - num2
+}
+
+function priceformat(price,number){
+  var number=number||2;
+  var f_price=parseFloat(price)//确保price转成数字
+  return f_price.toFixed(number)//取小数点后number位
+}
+
+function dateformat(timestamp,format){//将服务器传入的时间戳格式化
+  return "看ppt04的22页"
+}
+
+//commonjs的模块化导出的写法，一定要导出才能被外界使用
+module.exports = {
+  text:text,
+  str:str,
+  sub:sub,
+  priceformat:priceformat,
+  dateformat: dateformat,
+}

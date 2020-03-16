@@ -1,0 +1,8 @@
+/* page/wxs/wxs.wxss */
+
+.box{
+  background: black;
+  color: white;
+  font-size: 60rpx;
+  margin: 20rpx;
+}

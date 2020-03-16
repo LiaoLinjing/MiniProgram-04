@@ -1,0 +1,46 @@
+<!--page/wxs/wxs.wxml-->
+
+<view>----------wxs-------------</view>
+
+<!-- -------wxs的定义方法------- -->
+
+<!-- 1.直接在wxml里面定义 -->
+
+<wxs module="info">
+  //js代码,
+  var message="hello world"
+  var name="kobe"
+
+  var sum=function(num1,num2){
+    return num1+num2
+  }
+
+  //commonjs的模块化导出的写法，一定要导出才能被外界使用
+  module.exports={
+    message:message,
+    name:name,
+    sum:sum
+  }
+</wxs>
+<!-- 一定要定义module属性，否则不能被调用 -->
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(2,3)}}</view>
+
+<!-- 2.在.wxs文件里面定义 ,再使用<wxs>标签导入-->
+
+<!-- 不能使用绝对路径，只能使用相对路径 -->
+<wxs src="../wxs/fuct.wxs" module="fuct"></wxs>
+<view>{{fuct.text}}</view>
+<view>{{fuct.str}}</view>
+<view>{{fuct.sub(5,2)}}</view>
+
+<!-- 3.wxs的应用 -->
+<!-- 取数字小数点后n位 -->
+<wxs src="../wxs/fuct.wxs" module="format"></wxs>
+<view>{{format.priceformat(price,3)}}</view>
+
+<!-- 将服务器返回的时间戳进行格式化，如2019-10-23 -->
+<wxs src="../wxs/fuct.wxs" module="format"></wxs>
+<view class="box">{{format.dateformat(1,1)}}</view>
