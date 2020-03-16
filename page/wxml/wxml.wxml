@@ -1,0 +1,62 @@
+<!--page/wxml/wxml.wxml-->
+
+
+<view>02 wxml</view>
+
+<!-- --------1.wxml格式--------- -->
+
+<!-- --------2.Mustache语法--------- -->
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname+' '+lastname}}</view>
+<view>{{age>=18?'成年人':'未成年人'}}</view>
+<!-- 三目运算 -->
+
+<!-- 显示当前的时间 -->
+<view>{{nowtime}}</view>
+
+<!-- 点击按钮，view切换背景色 -->
+<button bindtap="handlebtn">切换颜色按钮</button>
+<view class="{{ispressed ? 'btn_ispressed':'box1'}}">背景</view>
+<!-- 如果ispressed是真，就执行btn_ispressed的样式，否则就执行box1的样式 -->
+
+
+<!----------------逻辑判断 ---------------->
+<view>------------条件判断-----------</view>
+
+<!-- wx:if的使用 -->
+<!-- 点击按钮，切换显示 -->
+<button bindtap="handle_btn_show">切换显示</button>
+<view class='box1' wx:if='{{isshow}}'>切换显示背景</view>
+
+<!-- wx:else/wx:elif的使用 -->
+<!-- 如果score>=98:优秀，>=80:良好,>=60：及格，<60:不及格> -->
+<view class="box1" wx:if='{{score>=90}}'>优秀</view>
+<view class="box1" wx:elif='{{score>=80}}'>良好</view>
+<view class="box1" wx:elif='{{score>=60}}'>及格</view>
+<view class="box1" wx:else>不及格</view>
+
+
+<view>------------列表渲染 wx:for----------</view>
+<!-- 可以遍历数组/字符串/数字 -->
+<view class='box2' wx:for="{{['abd','123','789']}}">{{item}} {{index}}</view>
+<!-- item和index是wx：for时自动生成的变量，index是索引值 -->
+
+<view class='box1' wx:for="hey">{{item}} {{index}}</view>
+
+<view class='box2' wx:for='{{3}}'>{{item}} {{index}}</view>
+<!-- 遍历3次 -->
+
+<view>-------------block标签-----------</view>
+<!-- 不渲染出来 -->
+
+
+<view>-------------给item、index起名字-----------</view>
+<view class="box1" wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+
+<!-- 遍历二维数组 -->
+<block wx:for="{{num}}" wx:for-item="arrayA">
+  <block wx:for="{{arrayA}}">
+    <view>{{item}}</view>
+  </block>
+</block>

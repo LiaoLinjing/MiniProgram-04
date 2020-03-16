@@ -1,0 +1,19 @@
+/* page/wxml/wxml.wxss */
+
+.btn_ispressed{
+  background: red;
+  color: white;
+  margin: 10rpx;
+}
+
+.box1{
+  background: black;
+  color: white;
+  margin: 10rpx;
+}
+
+.box2{
+  background: blue;
+  color: white;
+  margin: 10rpx;
+}
