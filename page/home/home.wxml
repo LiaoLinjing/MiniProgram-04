@@ -1,3 +1,43 @@
 <!--page/home/home.wxml-->
-<text class="tt">初始化项目</text>
+<text class="tt">事件处理</text>
+
+<!-- 1.事件处理的回顾 -->
+<!-- 第一种写法 -->
+<button bindtap="btnclick">按钮</button>
+<!-- 第二种写法也是合法的 -->
+<button bind:tap="btnclick">按钮</button>
+<!-- 第三种写法 -->
+<button catch:tap="btnclick">按钮</button>
+
+<!-- 2.常见事件 -->
+<view class="box"
+      bindtouchstart="handletouchstart"
+      bindtouchmove="handletouchmove"
+      bindtouchend="handletouchend"
+      bindtap="handletap"
+      bindlongpress="handlelongpress"></view>
+
+<!-- 3.事件对象的分析 -->
+<!-- (1)event参数的分析 -->
+<button bindtap="eventbtnclick">事件对象</button>
+
+<!-- （2）touches/changedtouches的区别：见pdf -->
+<!-- （3）targe/currenttarget的区别：见pdf -->
+
+<!-- 4.事件参数的传递 -->
+
+<!-- 监听几个view的点击事件,并取出title和index -->
+<view class="box2">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="box3" 
+    bindtap="handleitemclick"
+    data-item="{{item}}"
+    data-index="{{index}}"
+    >{{item}}</view>
+  </block>
+</view>
+<!-- 使用flex布局，属于前端知识 -->
+
+<!-- 5.事件冒泡和事件捕获 -->
+
 

@@ -3,3 +3,19 @@
   color: red;
   font-size: 30px;
 }
+
+.box{
+  background: black;
+  width: 400rpx;
+  height: 400rpx;
+  margin: 20rpx;
+}
+
+.box2{
+  display: flex;
+}
+
+.box3{
+  flex: 1;
+  text-align: center;
+}
