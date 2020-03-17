@@ -1,0 +1,12 @@
+<!--components/my-cpn/my-cpn.wxml-->
+
+<view class="title">我是标题</view>
+<view class="content">我是自定义组件的内容</view>
+
+<!-- 1.使用自定义组件 -->
+<!-- 要先在要使用的页面的json文件中注册，如现在要在home页面中使用 -->
+<!-- 再使用注册的标签在要调用样式的页面的wxml文件中导入 -->
+
+
+
+
