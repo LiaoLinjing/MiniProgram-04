@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-prop":"/components/my-prop/my-prop",
+    "lab-control": "/components/lab-control/lab-control"
+
+  }
 }

@@ -1,0 +1,5 @@
+<!--components/my-prop/my-prop.wxml-->
+
+<!-- 在js文件中的properties里添加title属性 -->
+<view class="title">{{title}}</view>
+<view class="content">我是组件的内容</view>

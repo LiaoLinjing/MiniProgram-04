@@ -1,3 +1,15 @@
 <!--page/home/home.wxml-->
 <text class="tt">初始化项目</text>
 
+<my-prop/>
+
+<!-- 在js文件中的properties里添加title属性 -->
+<my-prop title="标题1"/>
+<my-prop title="标题2"/>
+<my-prop title="标题3"/>
+
+<view>-------------------------------------------\n</view>
+
+<lab-control tts="{{['衣服','鞋子','裤子']}}"
+             bind:labitemclick="getlabitemclick"/>
+

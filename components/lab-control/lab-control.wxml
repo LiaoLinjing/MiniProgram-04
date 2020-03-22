@@ -1,0 +1,10 @@
+<!--components/lab-control/lab-control.wxml-->
+
+<view class="lab-control">
+  <block wx:for="{{tts}}" wx:key="{{index}}">
+    <view class="lab-item {{lab_currentindex ==index?'lab_isable':''}}" 
+          bind:tap='handlelabitemclick'
+          data-index='{{index}}'
+    >{{item}}</view>
+  </block>
+</view>

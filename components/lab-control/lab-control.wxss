@@ -1,0 +1,21 @@
+/* components/lab-control/lab-control.wxss */
+
+
+.lab-control{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: gray;
+
+}
+
+.lab-item{
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.lab_isable{
+  background: blue;
+  border-bottom:8rpx solid red;
+}
