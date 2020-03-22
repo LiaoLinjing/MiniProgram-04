@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-sel":"/oomponents/my-sel/my-sel"
+  }
 }

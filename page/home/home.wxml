@@ -1,3 +1,7 @@
 <!--page/home/home.wxml-->
-<text class="tt">初始化项目</text>
+
+<!-- 通过button修改my-sel里面的cn值 -->
+<button bind:tap="handleclick">修改组件内的数据</button>
+<my-sel class="my-sel-class"/>
+
 

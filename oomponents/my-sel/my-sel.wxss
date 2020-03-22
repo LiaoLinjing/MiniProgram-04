@@ -1,0 +1,5 @@
+/* oomponents/my-sel/my-sel.wxss */
+
+.box{
+  margin: 10rpx;
+}

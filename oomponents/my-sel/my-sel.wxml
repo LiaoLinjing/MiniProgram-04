@@ -1,0 +1,3 @@
+<!--oomponents/my-sel/my-sel.wxml-->
+
+<view class="box">计数:{{cn}}</view>

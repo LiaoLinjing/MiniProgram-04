@@ -8,6 +8,20 @@ Page({
 
   },
 
+  handleclick(){
+    // 1.获取组件对象
+    const my_sel = this.selectComponent('.my-sel-class')
+    console.log(my_sel)
+
+  // 2.修改组件内的数据
+    // my_sel.setData({
+    //   cn:my_sel.data.cn+1
+    // })
+
+    // 3.通过统一的方法去修改数据
+    my_sel.incn(1)
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
