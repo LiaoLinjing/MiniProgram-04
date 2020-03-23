@@ -1,0 +1,7 @@
+<!--cop/my-multi/my-multi.wxml-->
+
+<view>我是multi的头部</view>
+<view class="multi1"><slot name="multi1"/></view>
+<view class="multi2"><slot name="multi2"/></view>
+<view class="multi3"><slot name="multi3"/></view>
+<view>我是multi的尾部</view>

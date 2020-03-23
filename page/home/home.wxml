@@ -1,3 +1,20 @@
 <!--page/home/home.wxml-->
-<text class="tt">初始化项目</text>
+
+<my-slot>
+  <button>我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+  <text>我是插入的文本</text>
+</my-slot>
+
+<my-slot>
+  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584895348299&di=45a64c02d8fc515a73a25f4261a85aed&imgtype=0&src=http%3A%2F%2Fbcs.91.com%2Frbpiczy%2FWallpaper%2F2015%2F5%2F6%2F3275d305d9694482abdbd64bccd4a596-12.jpg"></image>
+</my-slot>
+
+<mu-slot>
+  <button slot="mutlti2">我是multi的按钮</button>
+  <text slot="multi1">我是multi的文本</text>
+</mu-slot>
+
 

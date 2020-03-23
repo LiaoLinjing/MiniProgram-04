@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-slot":"/cop/my-slot/my-slot",
+    "my-multi": "/cop/my-multi/my-multi"
+  }
 }
